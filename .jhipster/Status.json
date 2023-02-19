@@ -1,0 +1,30 @@
+{
+  "name": "Status",
+  "fields": [
+    {
+      "fieldName": "state",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "userStory",
+      "otherEntityRelationshipName": "status",
+      "relationshipName": "userStory",
+      "ownerSide": true
+    }
+  ],
+  "entityTableName": "status",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["toDo"],
+  "angularJSSuffix": "toDo",
+  "changelogDate": "20230219173256"
+}

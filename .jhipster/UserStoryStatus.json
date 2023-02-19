@@ -1,0 +1,27 @@
+{
+  "name": "UserStoryStatus",
+  "fields": [
+    {
+      "fieldName": "userId",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "statusState",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "user_story_status",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["toDo"],
+  "angularJSSuffix": "toDo",
+  "changelogDate": "20230219173356"
+}

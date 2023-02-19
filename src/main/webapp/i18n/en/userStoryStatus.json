@@ -1,0 +1,25 @@
+{
+  "toDoApp": {
+    "userStoryStatus": {
+      "home": {
+        "title": "User Story Statuses",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new User Story Status",
+        "createOrEditLabel": "Create or edit a User Story Status",
+        "notFound": "No User Story Statuses found"
+      },
+      "created": "A new User Story Status is created with identifier {{ param }}",
+      "updated": "A User Story Status is updated with identifier {{ param }}",
+      "deleted": "A User Story Status is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete User Story Status {{ id }}?"
+      },
+      "detail": {
+        "title": "User Story Status"
+      },
+      "id": "ID",
+      "userId": "User Id",
+      "statusState": "Status State"
+    }
+  }
+}

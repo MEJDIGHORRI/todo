@@ -1,0 +1,38 @@
+
+application {
+  config {
+    baseName toDo,
+    applicationType monolith,
+    packageName com.myapp,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+    clientFramework angular,
+    devDatabaseType mysql
+  }
+  entities *
+}
+
+entity UserStory {
+	title String required,
+  description String
+}
+
+entity Status {
+	state String required
+}
+
+entity UserStoryStatus {
+	userId Integer required,
+  statusState String required
+}
+
+
+enum Language {
+  FRENCH, ENGLISH
+}
+
+relationship OneToOne {
+  Status to UserStory
+}
+
+angularSuffix * with toDo

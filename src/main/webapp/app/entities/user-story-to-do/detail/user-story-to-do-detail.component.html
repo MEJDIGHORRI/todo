@@ -1,0 +1,36 @@
+<div class="row justify-content-center">
+  <div class="col-8">
+    <div *ngIf="userStory">
+      <h2 data-cy="userStoryDetailsHeading"><span jhiTranslate="toDoApp.userStory.detail.title">User Story</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ userStory.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="toDoApp.userStory.title">Title</span></dt>
+        <dd>
+          <span>{{ userStory.title }}</span>
+        </dd>
+        <dt><span jhiTranslate="toDoApp.userStory.description">Description</span></dt>
+        <dd>
+          <span>{{ userStory.description }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/user-story-to-do', userStory.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>
